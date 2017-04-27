@@ -28,6 +28,10 @@ ctrlApp.config(['$routeProvider', function($routeProvider) { // $routeProvider e
             templateUrl: 'app/components/videos/videoDetailsView.html',
             controller: 'videoDetailsController'
         })
+         .when('/stream', {
+            templateUrl: 'app/components/stream/streamView.html',
+            controller: 'streamController'
+        })
         .otherwise({
             redirectTo: '/home' // Redirection sur la page home
         });
