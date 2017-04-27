@@ -1,0 +1,103 @@
+/*
+	CSS DES VIDEOS
+*/
+.vid_filtreDiv {
+
+	}
+	.vid_paddingConteneur {
+		padding: 20px;
+		background: #FADAA3;
+	}
+	.vid_largeur {
+		width: 96%;
+		background: #FADAA3;
+		padding: 2%;
+	}
+	.vid_image {
+		width: 100%;
+		height: 120px;
+	}
+	.vid_rightAlignement {
+		text-align: right;
+		font-size: 12px;
+	}
+	.vid_titleSize {
+		font-size: 16px;
+	}
+	.vid_filterSelectTitle {
+	}
+	.vid_filterSelect{
+		background: white;
+		display: inline-block;
+		width: 80%;
+		text-align: center;
+		padding-left: 10px;
+		height: auto;
+		border-bottom: none!important;
+		border-bottom-color: rgb(00,00,00)!important;
+	}
+	.vid_select {
+		width: 100%!important;
+		
+	}
+	.vid_nomUti {
+		font-size: 12px;
+		font-weight: bold;
+		float: left;
+	}
+
+/* Pour les écrans supérieur à 600px */
+@media screen and (min-width: 600px){
+	.vid_largeur {
+		width: 265px;
+		/*float: left;*/
+		padding: 0;
+		margin: 0px 0px 20px 10px;
+		display: inline-block;
+	}
+	.vid_paddingConteneur {
+		padding: 25px 0px 0px 0px;
+		float: left;
+		background: #FADAA3;
+		width: 100%;
+	}
+	.vid_filtreDiv {
+		float: left;
+		margin-right: 20px;
+		text-align: center;
+	}
+	.vid_filterSelect {
+		height: 39px;
+
+	}
+	.vid_buttonFilter {
+		margin-top: 21px;
+	}
+	.vid_form {
+		margin-left: 20px;
+		margin-right: 20px;
+		width: 94.5%;
+		text-align: center;
+	}
+	.vid_fieldset {
+		display: inline-block;
+	}
+	.vid_conteneur {
+		margin: 0;
+	}
+	.vid_nomUti {
+		font-size: 12px;
+		font-weight: bold;
+		float: left;
+	}
+
+}
+
+@media screen and (min-width: 1200px){
+	.vid_largeur {
+		width: 268.75px;
+		float: left;
+		padding: 0;
+		margin: 0px 0px 20px 25px;
+	}
+}

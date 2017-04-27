@@ -1,0 +1,104 @@
+
+body {
+	background: white;
+	height: auto;
+}
+.page {
+	max-width: 1200px;
+	margin: auto;
+}
+.banniere {
+	width: 100%;
+	background: url("../images/1200.jpg");
+	height: 300px;
+}
+
+
+/* DEBUT DU CSS DU MENU*/
+.menu {
+	background: #333;
+	text-align: center;
+	width: 100%;
+	text-decoration: none;
+	font-weight: bold;
+	list-style-type: none;
+
+}
+.menu ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+}
+.menu li {
+    float: left;
+}
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.menu li a:hover {
+    background-color: #111;
+}
+.active {
+    /*background-color: #4CAF50;*/
+}
+/* FIN DU CSS DU MENU*/
+
+.center {
+	text-align: center;
+}
+.conteneur {
+	background: ORANGE;
+}
+.pied {
+	width: 1200px;
+	float: left;
+}
+
+
+
+/* MEDIA QUERY POUR SMARTPHONE */
+@media screen and (max-width: 600px){
+	
+	.banniere {
+		width: 100%;
+		background: url("../images/600.jpg");
+		height: 100px;
+	}
+	/* DEBUT DU CSS DU MENU*/
+	.menu {
+		width: 100%;
+		text-align: center;
+		font-weight: bold;
+	}
+	.menu ul{
+		padding: 0;
+		margin-bottom: 0px;
+		background: #333;
+	}
+	.menu li {
+		list-style-type: none;
+		width: 100%;
+		padding: 5px 0px 5px 0px;
+	}
+	.menu li:hover a:hover{
+		background: #87A7B2;
+		cursor: pointer;
+		color: black!important;
+		font-size: 18px;
+	}
+	.menu a {
+		display: block;
+		text-decoration: none;
+		color: white!important;
+	}
+	/* FIN DU CSS DU MENU*/
+	.pied {
+		width: 100%;
+	}
+}

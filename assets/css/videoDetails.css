@@ -1,0 +1,95 @@
+/*
+	CSS DES VIDEOS
+*/
+
+/* CSS pour les smartphones */
+.vde_paddingConteneur {
+	padding: 20px;
+	background: #FADAA3;
+	float: left;
+}
+
+.vde_video {
+	width: 100%;
+}
+.vde_videoInfo {
+	background: white;
+	width: 96%;
+	padding: 2%;
+}
+.vde_alignementDroite {
+	text-align: right;
+}
+.vde_nomUti {
+	float: left;
+}
+.vde_description {
+	width: 96%;
+	background: white;
+	padding: 2%;
+	margin-top : 20px;
+}
+.vde_autresVideos {
+	width: 100%;
+	margin-top : 20px;
+	float: left;
+	background: white;
+}
+.vde_autresVideos h3 {
+	margin: 0px 0px 0px 2%;
+	padding: 0;
+}
+.vde_autresVideosYoutube {
+	width: 48%;
+	margin-right: 2%;
+	float: left;
+}
+.vde_autresVideosTitre{
+	width: 48%;
+	padding: 1%;
+	float: left;
+}
+.vde_autresVideosConteneur {
+	width: 96%;
+	margin-top: 10px;
+	float: left;
+	padding: 2%
+}
+.vde_autresVideosNomUti {
+}
+
+/* Pour les écrans supérieur à 600px */
+@media screen and (min-width: 600px){
+	.vde_videoDetails {
+		float: left;
+		width: 64%;
+		background: white;
+		padding: 2%;
+	}
+	.vde_paddingConteneur {
+		float: left;
+	}
+	.vde_video {
+		width: 100%;
+		float: left;
+	}
+	.vde_videoInfo {
+		width: 96%;
+		float: left;
+	}
+	.vde_description{
+		width: 96%;
+		float: left;
+		margin-top: 0px;
+	}
+	.vde_autresVideos {
+		width: 30%;
+		float: right;
+		margin-top : 0px;
+	}
+}
+
+
+@media screen and (min-width: 1200px){
+
+}

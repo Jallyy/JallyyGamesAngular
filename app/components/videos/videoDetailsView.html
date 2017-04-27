@@ -1,0 +1,42 @@
+
+<div>
+	<div class="page">
+		<div class="banniere"></div>
+		<ng-menu></ng-menu>
+		<div class="conteneur vde_paddingConteneur" >
+			<div ng-repeat="vid in video" class="vde_videoDetails">
+				<div class="vde_video">
+					<iframe  margin-bottom="20px" width="100%" height="400px" ng-src="{{vid.url}}" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="vde_videoInfo">
+					{{vid.titre}}
+				</div>
+				<div class="vde_videoInfo">
+					<div class="vde_nomUti"><a href="#/videos">{{vid.nomUti}}</a></div>
+					<div class="vde_alignementDroite">{{vid.date}}</div>
+				</div>
+				<div class="vde_description">
+					<h3>Description</h3>
+					{{vid.description}}
+				</div>
+			</div>
+			<div class="vde_autresVideos" ng-if="videoSimilaireCount == 1">
+				<h3>Vidéos Similaires</h3>
+				<div class="vde_autresVideosConteneur" ng-repeat="vidS in videosSimilaires">
+					<div class="vde_autresVideosYoutube">
+						<a href="#/videos/{{vidS.id}}"><img ng-src="assets/images/videos/{{vidS.image}}" alt="img" style="height: 140px;"/></a>
+					</div>
+					<div class="vde_autresVideosTitre">
+						<a href="#/videos/{{vidS.id}}">{{vidS.titre}}</a>
+					</div>
+					<div class="vde_autresVideosNomUti"><a href="#/videos">{{vidS.nomUti}}</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="pied">
+			<div class="uk-padding uk-background-muted uk-width-1-2@s center pied">
+			    ﻿ <p>WebMaster "Jalley Vincent" - JallyyGames - Copyright 2016 - Création du site le 30.07.2014 - Dernière Mise à jour le 01.04.2017</p>
+			</div>
+		</div>
+	</div>
+</div>

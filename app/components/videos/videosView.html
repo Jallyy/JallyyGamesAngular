@@ -1,0 +1,50 @@
+
+<div>
+	<div class="page">
+		<div class="banniere"></div>
+		<ng-menu></ng-menu>
+		<div class="conteneur vid_paddingConteneur">
+			<div class="vid_filter">
+				<form class="uk-form vid_form">
+
+				    <fieldset data-uk-margin class="vid_fieldset">
+				        <div class="center vid_filtreDiv">
+					        <span class="vid_filterSelectTitle">Youtubeurs</span>
+					        <md-select name="type" ng-model="selectYoutuber" required class="vid_filterSelect" aria-label="WriteHereAnyLabelYouLike">
+					            <md-option value="tous" selected>Tous</md-option>
+					            <md-option value="{{uti.id}}" aria-label="" ng-repeat="uti in youtubers">{{uti.nom}}</md-option>
+					        </md-select>
+					    </div>
+				        <div class="center vid_filtreDiv">
+					        <span class="vid_filterSelectTitle">Jeux-vidéo</span>
+					        <md-select name="type" ng-model="selectJeu" class="vid_filterSelect" required aria-label="WriteHereAnyLabelYouLike">
+					        	<md-option value="tous" selected>Tous</md-option>
+					            <md-option value="{{jeu.id}}" ng-repeat="jeu in jeux">{{jeu.nom}}</md-option>
+					        </md-select>
+				        </div>
+				        <div class="center vid_filtreDiv vid_buttonFilter"> <button ng-click="getVideosFiltre()" class="uk-button-primary vid_buttonFilter" style="height: 39px;width: 100PX;">Filtrer</button></div>
+				       
+				    </fieldset>
+
+				</form>
+	        </div>
+	        <div class="center vid_conteneur">
+				<div class="vid_largeur" ng-repeat="vid in videos">
+				    <a href="#/videos/{{vid.id}}">
+				    	<img ng-src="assets/images/videos/{{vid.image}}" class="vid_image" />
+				    </a>
+				    <a href="#/videos" class="vid_titleSize">{{vid.titre}}</a>
+				    <div>
+					    <div class="vid_nomUti" tyle="float: left;"><a href="#/videos">{{vid.nomUti}}</a></div>
+					    <div class="vid_rightAlignement">{{vid.date}}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pied">
+			<div class="uk-padding uk-background-muted uk-width-1-2@s center pied">
+			    ﻿ <p>WebMaster "Jalley Vincent" - JallyyGames - Copyright 2016 - Création du site le 30.07.2014 - Dernière Mise à jour le 01.04.2017</p>
+			</div>
+		</div>
+	</div>
+</div>

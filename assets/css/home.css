@@ -1,0 +1,50 @@
+/*
+	CSS DU HOME
+*/
+
+.arrondi {
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.center {
+	text-align: center;
+	font-weight: bold;
+}
+
+.elementHome {
+	background: #D2D7D3;
+	padding: 40px 40px 40px 40px;
+}
+
+.fondCouleur {
+	background: #5991B1!important;
+}
+
+.alignement {
+	/*display: flex;
+	flex-wrap: wrap;*/
+	z-index: 999;
+}
+
+.largeurElement {
+	float: left;
+	width: 100%;
+	display: inline-block;
+}
+
+.largeurElement2 {
+	float: right;
+	width: 50%;
+}
+
+@media screen and (max-width: 600px){
+	.elementHome {
+		background: #A8BAC6!important;
+		padding: 20px;
+	}
+	.arrondi {
+		border-radius: 10px;
+		padding: 5px;
+	}
+}
