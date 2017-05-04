@@ -2,15 +2,32 @@
 * Code css de la page STREAM*
 */
 
+/* CSS pour les smartphones */
+.str_paddingConteneur {
+}
+.str_video {
+	text-align: center;
+}
+.str_videoTwitch {
+	padding:0px 0px 0px; 
+	display:block; 
+	width:100%;
+	font-weight:normal; 
+	font-size:10px; 
+	text-decoration:underline;"
+}
+.str_chat {
 
+}
+.str_chatTwtich {
+	width: 100%;
+	height: 400px;
+}
 
+/* Pour les écrans supérieur à 600px */
+@media screen and (min-width: 600px){
 
-
-
-
-
-
-
+}
 
 
 
