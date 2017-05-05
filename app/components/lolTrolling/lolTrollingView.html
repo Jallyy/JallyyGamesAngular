@@ -1,0 +1,32 @@
+
+<div>
+	<div class="page">
+		<div class="banniere"></div>
+		<ng-menu></ng-menu>
+		<div class="conteneur ltr_paddingConteneur">
+			<h3>LOL Trolling</h3>
+			<div class="vid_filter">
+				<form class="uk-form ltr_form">
+
+				    <fieldset data-uk-margin class="ltr_fieldset">
+				        <div class="center ltr_filtreDiv">
+					        <span class="ltr_filterSelectTitle">Nombre de joueurs</span>
+					        <md-select name="type" ng-model="selectYoutuber" required class="ltr_filterSelect" aria-label="WriteHereAnyLabelYouLike">
+					            <md-option value="1" aria-label="" selected>1</md-option>
+					            <md-option value="2" aria-label="" >2</md-option>
+					            <md-option value="3" aria-label="" >3</md-option>
+					            <md-option value="4" aria-label="" >4</md-option>
+					            <md-option value="5" aria-label="" >5</md-option>
+					        </md-select>
+					    </div>
+				       
+				        <div class="center ltr_filtreDiv ltr_buttonFilter"> <button ng-click="getVideosFiltre()" class="uk-button-primary ltr_buttonFilter" style="height: 39px;width: 105PX;">C'est partie !</button></div>
+				       
+				    </fieldset>
+
+				</form>
+	        </div>
+		</div>
+		<ng-footer></ng-footer>
+	</div>
+</div>

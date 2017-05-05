@@ -53,10 +53,10 @@ body {
 	text-align: center;
 }
 .conteneur {
-	background: ORANGE;
+	background: white;
 }
 .pied {
-	width: 1200px;
+	width: 100%;
 	float: left;
 }
 

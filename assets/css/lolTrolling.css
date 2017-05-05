@@ -1,0 +1,56 @@
+
+/*
+* Code css de la page lol Trolling*
+  Abréviation ltr
+*/
+
+/* CSS pour les smartphones */
+.ltr_paddingConteneur {
+	background: #FADAA3;
+	padding: 2%;
+}
+
+.ltr_filter {
+
+}
+.ltr_filterSelectTitle {
+
+}
+
+.ltr_form {
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 94.5%;
+	text-align: center;
+}
+
+.ltr_filterSelect{
+		background: white;
+		display: inline-block;
+		width: 80%;
+		text-align: center;
+		padding-left: 10px;
+		height: auto;
+		border-bottom: none!important;
+		border-bottom-color: rgb(00,00,00)!important;
+	}
+
+
+/* Pour les écrans supérieur à 600px */
+@media screen and (min-width: 600px){
+	.ltr_fieldset {
+		display: inline-block;
+	}
+	.ltr_filtreDiv {
+		float: left;
+		margin-right: 20px;
+		text-align: center;
+	}
+	.ltr_filterSelect {
+		height: 39px;
+
+	}
+	.ltr_buttonFilter {
+		margin-top: 21px;
+	}
+}

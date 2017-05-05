@@ -11,7 +11,7 @@
 				        <div class="center vid_filtreDiv">
 					        <span class="vid_filterSelectTitle">Youtubeurs</span>
 					        <md-select name="type" ng-model="selectYoutuber" required class="vid_filterSelect" aria-label="WriteHereAnyLabelYouLike">
-					            <md-option value="tous" selected>Tous</md-option>
+					            <md-option value="tous" aria-label="" selected>Tous</md-option>
 					            <md-option value="{{uti.id}}" aria-label="" ng-repeat="uti in youtubers">{{uti.nom}}</md-option>
 					        </md-select>
 					    </div>

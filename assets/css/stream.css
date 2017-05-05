@@ -4,6 +4,7 @@
 
 /* CSS pour les smartphones */
 .str_paddingConteneur {
+	background: #FADAA3;
 }
 .str_video {
 	text-align: center;
@@ -12,9 +13,10 @@
 	padding:0px 0px 0px; 
 	display:block; 
 	width:100%;
+	height: 250px;
 	font-weight:normal; 
 	font-size:10px; 
-	text-decoration:underline;"
+	text-decoration:underline;
 }
 .str_chat {
 
@@ -26,7 +28,22 @@
 
 /* Pour les écrans supérieur à 600px */
 @media screen and (min-width: 600px){
+	.str_videoTwitch {
+		padding:2% 10% 2% 10%; 
+		display:block; 
+		width:80%;
+		height: 450px;
+		font-weight:normal; 
+		font-size:10px; 
+		text-decoration:underline;
 
+	}
+
+	.str_chatTwtich {
+	width:80%;
+	height: 400px;
+	padding:2% 10% 2% 10%; 
+}
 }
 
 

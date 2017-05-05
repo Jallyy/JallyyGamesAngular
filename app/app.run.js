@@ -14,7 +14,7 @@ var ctrlApp = angular.module('ctrlApp'); // Importe les dépendances du parent c
 ctrlApp.run(function($rootScope, $location){//, AuthenticationService, SessionService, $http, Notification){
 
 	/* Ici nous mettrons toutes les routes que l'utilisateur pourra accéder */
-	var route = ['/home', '/videos', '/video/:id', '/stream'];
+	var route = ['/home', '/videos', '/video/:id', '/stream', '/lolTrolling'];
 
 	/* Fonction déclenché quand un changement de route se fait dans le run de l'application */
 	$rootScope.$on('$routeChangeStart', function(event, next, current) {

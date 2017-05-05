@@ -1,19 +1,19 @@
 <?php
-	
+
 	//Info en local
 	define("SERVER", "localhost");
 	define("USER", "root");
-	define("PASS", "");
+	define("PASS", "root");
 	define("DATABASE", "jallyy");
-/*
+/*	
 	
 	//Info du serveur :
-	define("SERVER", "mysql11.000webhost.com");
-	define("USER", "a6831862_jallyy");
-	define("PASS", "fred5luffy");
-	define("DATABASE", "a6831862_bbd");
+	define("SERVER", "localhost");
+	define("USER", "id1554874_jallyy");
+	define("PASS", "987654321");
+	define("DATABASE", "id1554874_jallyy");
 	
-
 */
+
 
 ?>

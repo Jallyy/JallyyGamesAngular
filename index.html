@@ -2,22 +2,24 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<!-- CSS -->	
 		<link rel="stylesheet" href="assets/css/uikit-3.0.0-beta.19/css/uikit.min.css"/>
-		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.css">
+		<link rel="stylesheet" href="assets/css/angular-material/angular-material.min.css">
 		<link rel="stylesheet" href="assets/css/shared.css"/>
 		<link rel="stylesheet" href="assets/css/home.css"/>
 		<link rel="stylesheet" href="assets/css/videos.css"/>
 		<link rel="stylesheet" href="assets/css/videoDetails.css"/>
 		<link rel="stylesheet" href="assets/css/stream.css"/>
+		<link rel="stylesheet" href="assets/css/lolTrolling.css"/>
 		<!-- JavaScript -->  		 
 	    <script type="text/javascript" src="assets/angular/angular.min.js"></script>
    		<!-- Angular -->
    		<script type="text/javascript" src="assets/angular/angular-route.min.js"></script>
-   		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
-	    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.min.js"></script>
-	    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.min.js"></script>
-	    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.js"></script>
+   		<script type="text/javascript" src="assets/angular/angular-animate.min.js"></script>
+	    <script type="text/javascript" src="assets/angular/angular-aria.min.js"></script>
+	    <script type="text/javascript" src="assets/angular/angular-messages.min.js"></script>
+	    <script type="text/javascript" src="assets/angular/angular-material.min.js"></script>
 		<!-- gestion des routes -->
 	    <script type="text/javascript" src="app/app.route.js"></script> 
 		<!-- Controlleurs partagés -->
@@ -28,10 +30,11 @@
 		<script type="text/javascript" src="app/components/videos/videosController.js"></script>
 		<script type="text/javascript" src="app/components/videos/videoDetailsController.js"></script>
 		<script type="text/javascript" src="app/components/stream/streamController.js"></script>
+		<script type="text/javascript" src="app/components/lolTrolling/lolTrollingController.js"></script>
 		<!-- Librairies javascript -->
-		<script src="assets/js/jquery.js"></script>
-		<script src="assets/js/uikit-3.0.0-beta.19/js/uikit.min.js"></script>
-		<script src="assets/js/uikit-3.0.0-beta.19/js/uikit-icons.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.js"></script>
+		<script type="text/javascript" src="assets/js/uikit-3.0.0-beta.19/js/uikit.min.js"></script>
+		<script type="text/javascript" src="assets/js/uikit-3.0.0-beta.19/js/uikit-icons.min.js"></script>
 	</head>
 	<body ng-app="ctrlApp">
 		<div ng-view></div>
