@@ -17,9 +17,10 @@
 }
 
 .ltr_form {
-	margin-left: 2.5%;
-	width: 95%;
+	margin-left: 7.5%;
+	width: 85%;
 	text-align: center;
+	background: #F3D89F;
 }
 
 .ltr_filterSelect{
@@ -43,15 +44,37 @@
 }
 
 .ltr_joueurs {
-	background: orange;
 	text-align: center;
 	padding: 2% 2% 2% 2%;
 }
 
 .ltr_joueur {
-	background: blue;
-	height: 200px;
+	background: #F3D89F;
+	border: solid 2px threedface;
+	border-style: groove;
 }
+
+.ltr_noJoueur {
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 10px;
+}
+.ltr_nomChamp {
+	padding: 10px 0px 10px 0px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.ltr_nomRole {
+	padding: 10px 0px 10px 0px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.ltr_sortInvocateurs {
+	padding: 10px 0px 20px 0px;
+}
+
+
 
 /* Pour les écrans supérieur à 600px */
 @media screen and (min-width: 600px){
