@@ -44,6 +44,9 @@
 		font-weight: bold;
 		float: left;
 	}
+	.vid_fieldset {
+		background: #F3D89F;
+	}
 
 /* Pour les écrans supérieur à 600px */
 @media screen and (min-width: 600px){
