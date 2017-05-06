@@ -4,14 +4,14 @@
 		<div class="banniere"></div>
 		<ng-menu></ng-menu>
 		<div class="conteneur ltr_paddingConteneur">
-			<h3>LOL Trolling</h3>
+			<span class="ltr_title">LOL Trolling</span>
 			<div class="">
 				<form class="uk-form ltr_form">
 
 				    <fieldset data-uk-margin class="ltr_fieldset">
 				        <div class="center ltr_filtreDiv">
 					        <span class="ltr_filterSelectTitle" >Nombre de joueurs</span>
-					        <md-select name="type" ng-model="nbJoueur" required class="ltr_filterSelect" aria-label="WriteHereAnyLabelYouLike">
+					        <md-select name="type" ng-model="nbJoueur" required class="ltr_filterSelect" aria-label="WriteHereAnyLabelYouLike" ng-change="cleanResultFiltres()">
 					            <md-option value="1" aria-label="" >1</md-option>
 					            <md-option value="2" aria-label="" >2</md-option>
 					            <md-option value="3" aria-label="" >3</md-option>
@@ -19,63 +19,66 @@
 					            <md-option value="5" aria-label="" selected>5</md-option>
 					        </md-select>
 					    </div>
-					    <div class="center ltr_filtreDiv">
+					    <div class="center ltr_filtreDiv" >
 					     	<span class="ltr_filterSelectTitle">Champions aléatoires</span>
 						    <md-switch class="ltr_mdSwitch" ng-model="champRandom"
 						        ng-model="vm.activated"
-						        ng-change="vm.toggleActivation()"
-						        aria-label="Enable Indicators">
+						        aria-label="Enable Indicators"
+						        ng-click="cleanResultFiltres()">
 						    </md-switch>
 					    </div>
 					    <div class="center ltr_filtreDiv">
 					     	<span class="ltr_filterSelectTitle">Equipements aléatoires</span>
 						    <md-switch class="ltr_mdSwitch" ng-model="equipRandom"
 						        ng-model="vm.activated2"
-						        ng-change="vm.toggleActivation2()"
-						        aria-label="Enable Indicators2">
+						        aria-label="Enable Indicators2"
+						        ng-click="cleanResultFiltres()">
 						    </md-switch>
 					    </div>
 					    <div class="center ltr_filtreDiv">
 					     	<span class="ltr_filterSelectTitle">Sorts d'invocateurs aléatoires</span>
 						    <md-switch class="ltr_mdSwitch" ng-model="sortInvoRandom"
 						        ng-model="vm.activated3"
-						        ng-change="vm.toggleActivation3()"
-						        aria-label="Enable Indicators3">
+						        aria-label="Enable Indicators3"
+						        ng-click="cleanResultFiltres()">
 						    </md-switch>
 					    </div>
 					    <div class="center ltr_filtreDiv">
 					     	<span class="ltr_filterSelectTitle">Rôles aléatoires</span>
 						    <md-switch class="ltr_mdSwitch" ng-model="roleRandom"
 						        ng-model="vm.activated2"
-						        ng-change="vm.toggleActivation3()"
-						        aria-label="Enable Indicators3">
+						        aria-label="Enable Indicators3"
+						        ng-click="cleanResultFiltres()">
 						    </md-switch>
 					    </div>
 				      
-				        <div class="center ltr_GoDiv ltr_buttonGo"> <button ng-click="getSelections()" class="uk-button-primary ltr_buttonGo" style="height: 39px;width: 105PX;">GO !</button></div>
+				        <div class="center ltr_Go">
+				        	<button ng-click="traiterFiltres()" class="uk-button-primary ltr_buttonGo" style="height: 39px;width: 105PX;">GO !</button>
+				        </div>
 				       
 				    </fieldset>
 
 				</form>
 	        </div>
-	        <div class="ltr_joueurs" ng-repeat="n in [].constructor(5) track by $index">
-	        	<div class="ltr_joueur">
-	        		<div class="ltr_noJoueur">Joueur 1</div>
-	        		<div class="ltr_nomChamp">Evelynn</div>
-	        		<div class="ltr_imageChamp">
+	        <div class="ltr_joueurs" ng-if="filtrage">
+	        	<!--<div class="ltr_joueur" ng-repeat="n in [].constructor(5) track by $index">-->
+	        	<div class="ltr_joueur" ng-repeat="joueur in joueurs">
+	        		<div class="ltr_noJoueur">Joueur {{joueur.indice+1}}</div>
+	        		<div class="ltr_nomChamp" ng-if="champRandom">{{joueur.nomChamp}}</div>
+	        		<div class="ltr_imageChamp" ng-if="champRandom">
 	        			<img src="./assets/images/jeux/lol/champions/ahri.png" alt="" />
 	        		</div>
 	        		<div class="ltr_nomRole">Jungle</div>
 	        		<div class="ltr_equipements">
 	        			<div>
-	        				<img src="./assets/images/jeux/lol/items/Ange gardien.png" width="60px" alt="" />
-		        			<img src="./assets/images/jeux/lol/items/Au bout du rouleau.png" width="60px" alt="" />
-		        			<img src="./assets/images/jeux/lol/items/Bottes de lucidite.png" width="60px" alt="" />
+	        				<img src="./assets/images/jeux/lol/items/Ange gardien.png" class="ltr_itemImage" alt="" />
+		        			<img src="./assets/images/jeux/lol/items/Au bout du rouleau.png" class="ltr_itemImage" alt="" />
+		        			<img src="./assets/images/jeux/lol/items/Bottes de lucidite.png" class="ltr_itemImage" alt="" />
 	        			</div>
 	        			<div>
-	        				<img src="./assets/images/jeux/lol/items/Cotte epineuse.png" width="60px" alt="" />
-		        			<img src="./assets/images/jeux/lol/items/Coiffe de Rabadon.png" width="60px" alt="" />
-		        			<img src="./assets/images/jeux/lol/items/couperet noir.png" width="60px" alt="" />
+	        				<img src="./assets/images/jeux/lol/items/Cotte epineuse.png" class="ltr_itemImage" alt="" />
+		        			<img src="./assets/images/jeux/lol/items/Coiffe de Rabadon.png" class="ltr_itemImage" alt="" />
+		        			<img src="./assets/images/jeux/lol/items/couperet noir.png" class="ltr_itemImage" alt="" />
 	        			</div>
 	        		</div>
 	        		<div class="ltr_sortInvocateurs">
